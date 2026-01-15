@@ -28,7 +28,7 @@ const SkillExtraction: React.FC = () => {
   useEffect(() => {
     const loadSkills = async () => {
       try {
-        // FRONTEND FROZEN — resumeId comes from backend user context
+        // FRONTEND FROZEN — resumeId 'current' tells backend to use active resume
         const extractedSkills = await extractSkillsFromResume('current');
         setSkills(extractedSkills);
       } catch (err) {
