@@ -29,7 +29,7 @@ const CompanyProfile: React.FC = () => {
     }
     
     if (!isVerified) {
-      navigate('/company/verify-digilocker', { replace: true });
+      navigate('/company/verify-email', { replace: true });
     }
   }, [isInitialized, isAuthenticated, isVerified, navigate]);
 
